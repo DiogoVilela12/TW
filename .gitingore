@@ -1,0 +1,21 @@
+# Comentário explicativo (linhas que começam com # são ignoradas)
+
+# Ignorar todos os arquivos .log
+*.log
+
+# Ignorar a pasta node_modules e tudo dentro dela
+node_modules/
+
+# Ignorar arquivos .env
+.env
+
+# Ignorar arquivos específicos
+secret.txt
+main.js
+
+# Ignorar todas as pastas dist em qualquer lugar do projeto
+**/dist/
+
+# Ignorar todos os arquivos .tmp, exceto important.tmp
+*.tmp
+!important.tmp

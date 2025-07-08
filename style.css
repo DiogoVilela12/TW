@@ -1,0 +1,160 @@
+.button {
+    position: fixed;
+    left: 32px;
+    bottom: 32px;
+    z-index: 999;
+}
+
+.button_logo {
+    width: 4rem;
+}
+
+.button_box {
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2267ced5;
+
+    border: none;
+    border-radius: 16px;
+
+    cursor: pointer;
+}
+
+.button_box:hover {
+    background-color: #2267ceeb;
+}
+
+.button_box_active {
+    background-color: #2267ce;
+}
+
+.toolbox {
+    left: calc(32px + 5rem + 2rem);
+    bottom: 32px;
+
+    border-radius: 16px;
+
+    position: fixed;
+    width: calc(100vw - calc(32px + 5rem + 4rem));
+    height: calc(100vh - 64px);
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #2267ce;
+}
+
+.toolbox_nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #111;
+    border-radius: 16px;
+
+    margin: 1rem;
+    margin-right: 0;
+    height: calc(100vh - 64px - 2rem);
+}
+
+.toolbox_link {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+
+    padding: 0.6rem;
+
+    background-color: #222;
+    /* cor de fundo opcional para contraste */
+    border: 1px solid #000;
+    border-bottom: none;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.toolbox_link:nth-child(1) {
+    border-radius: 16px 16px 0 0;
+}
+
+.toolbox_link:nth-last-child(1) {
+    border-radius: 0 0 16px 16px;
+}
+
+.toolbox_link:hover {
+
+    background-color: #333;
+    /* leve mudança no hover para feedback visual */
+}
+
+.content {
+    width: 100%;
+    margin: 1rem;
+
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 16px;
+
+    width: 100%;
+    color: #fff;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.form_input {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+.form_input:focus {
+    background-color: #333;
+}
+
+.form_button {
+    padding: 0.75rem 1rem;
+
+    background-color: #2267ced5;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_button:hover {
+    background-color: #2267ceeb;
+}
+
+.form_button:active {
+    background-color: #2267ce;
+}

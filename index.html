@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="assets/logo.png" alt="teste">
+
+    <section>
+
+        <div class="button">
+            <button onclick="toggleToolbox()" class="button_box">
+                <img class="button_logo" src="assets/logo.png" alt="teste">
+            </button>
+        </div>
+
+        <script>
+            function toggleToolbox() {
+                const toolbox = document.querySelector('.toolbox');
+                const button = document.querySelector('.button_box')
+
+                if (toolbox.style.display === 'none' || toolbox.style.display === '') {
+                    toolbox.style.display = 'flex';
+                    button.classList.add('button_box_active');
+                } else {
+                    toolbox.style.display = 'none';
+                    button.classList.remove('button_box_active');
+                }
+            }
+        </script>
+
+        <div class="toolbox">
+            <nav class="toolbox_nav">
+                <a class="toolbox_link" href=""> Link 01</a>
+                <a class="toolbox_link" href=""> Link 01 </a>
+                <a class="toolbox_link" href=""> Link 01 </a>
+                <a class="toolbox_link" href=""> Link 01 </a>
+                <a class="toolbox_link" href=""> Link 01 </a>
+            </nav>
+
+            <div class="content">
+                <form class="form">
+                    <div class="form_group">
+                        <label class="form_label" for="name">Nome</label>
+                        <input class="form_input" type="text" id="name" name="name" />
+                    </div>
+
+                    <div class="form_group">
+                        <label class="form_label" for="email">Email</label>
+                        <input class="form_input" type="email" id="email" name="email" />
+                    </div>
+
+                    <button class="form_button" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
